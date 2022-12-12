@@ -47,7 +47,7 @@ touch index.html
 mkdir -p static/css
 cd static/css
 touch index.css
-cd ..
+cd ../..
 mkdir -p static/frontend
 cd static/frontend
 mkdir -p src/components
@@ -57,12 +57,12 @@ cd components
 touch HomePage.js
 touch App.js
 cd ../../../../../../../../
-
+ls
 # Default frontend files
 mv index.html django_react_starter/frontend/templates/frontend/index.html
 mv index.js django_react_starter/frontend/templates/frontend/static/frontend/src/index.js
-mv App.js django_react_starter/frontend/templates/frontend/static/frontend/src/component/App.js
-mv HomePage.js django_react_starter/frontend/templates/frontend/static/frontend/src/component/HomePage.js
+mv App.js django_react_starter/frontend/templates/frontend/static/frontend/src/components/App.js
+mv HomePage.js django_react_starter/frontend/templates/frontend/static/frontend/src/components/HomePage.js
 mv babel.config.js django_react_starter/frontend/templates/frontend/babel.config.js
 mv webpack.config.js django_react_starter/frontend/templates/frontend/webpack.config.js
 
