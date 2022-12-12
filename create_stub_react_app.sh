@@ -27,11 +27,16 @@ cp ../webpack.config.js backup/webpack.config.js
 
 # Default Django files
 mkdir api
-mv ../models.py api/models.py
-mv ../serializers.py api/serializers.py
-mv ../views.py api/views.py
-mv ../urls.py api/urls.py
-mv ../settings.py api/settings.py
+#mv ../models.py api/models.py
+#mv ../serializers.py api/serializers.py
+#mv ../views.py api/views.py
+#mv ../urls.py api/urls.py
+#mv ../settings.py api/settings.py
+cp ../models.py api/models.py
+cp ../serializers.py api/serializers.py
+cp ../views.py api/views.py
+cp ../urls.py api/urls.py
+cp ../settings.py api/settings.py
 
 # React
 mkdir frontend
@@ -58,6 +63,7 @@ touch HomePage.js
 touch App.js
 cd ../../../../../../../../
 ls
+
 # Default frontend files
 mv index.html django_react_starter/frontend/templates/frontend/index.html
 mv index.js django_react_starter/frontend/templates/frontend/static/frontend/src/index.js
@@ -65,4 +71,9 @@ mv App.js django_react_starter/frontend/templates/frontend/static/frontend/src/c
 mv HomePage.js django_react_starter/frontend/templates/frontend/static/frontend/src/components/HomePage.js
 mv babel.config.js django_react_starter/frontend/templates/frontend/babel.config.js
 mv webpack.config.js django_react_starter/frontend/templates/frontend/webpack.config.js
+
+# Run migrations and start server
+#python manage.py makemigrations
+#python manage.py migrate
+#python manage.py runserver
 
