@@ -68,17 +68,29 @@ cd ../../../../
 ls # debug
 
 # Default frontend files
-mv index.html django_react_starter/frontend/templates/frontend/index.html
-mv index.js django_react_starter/frontend/static/frontend/src/index.js
-mv App.js django_react_starter/frontend/src/components/App.js
-mv HomePage.js django_react_starter/frontend/src/components/HomePage.js
-mv babel.config.js django_react_starter/frontend/templates/frontend/babel.config.js
-mv webpack.config.js django_react_starter/frontend/templates/frontend/webpack.config.js
+#mv index.html django_react_starter/frontend/templates/frontend/index.html
+#mv index.js django_react_starter/frontend/static/frontend/src/index.js
+#mv App.js django_react_starter/frontend/src/components/App.js
+#mv HomePage.js django_react_starter/frontend/src/components/HomePage.js
+#mv babel.config.js django_react_starter/frontend/templates/frontend/babel.config.js
+#mv webpack.config.js django_react_starter/frontend/templates/frontend/webpack.config.js
+#mv frontend_urls.py django_react_starter/frontend/urls.py
+#mv frontend_views.py django_react_starter/frontend/views.py
+cp index.html django_react_starter/frontend/templates/frontend/index.html
+cp index.js django_react_starter/frontend/src/index.js
+cp App.js django_react_starter/frontend/src/components/App.js
+cp HomePage.js django_react_starter/frontend/src/components/HomePage.js
+cp babel.config.js django_react_starter/frontend/templates/frontend/babel.config.js
+cp webpack.config.js django_react_starter/frontend/templates/frontend/webpack.config.js
+cp frontend_urls.py django_react_starter/frontend/urls.py
+cp frontend_views.py django_react_starter/frontend/views.py
 
 cd django_react_starter
 
-# Run migrations and start server
-python manage.py makemigrations
-python manage.py migrate
-python manage.py runserver
+# To test, run 'npm run dev' in the frontend directory.
+# Then, go to django_react_starter directory,
+# Run migrations and start server:
+#python manage.py makemigrations
+#python manage.py migrate
+#python manage.py runserver
 
