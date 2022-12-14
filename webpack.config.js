@@ -3,6 +3,9 @@ const webpack = require("webpack");
 
 module.exports = {
   entry: "./src/index.js",
+  resolve: {
+    extensions: ['.ts', '.js', '.jsx'],
+  },
   output: {
     path: path.resolve(__dirname, "./static/frontend"),
     filename: "[name].js",
@@ -10,7 +13,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",

@@ -91,10 +91,11 @@ cd django_react_starter/frontend
 ls # debug
 
 # Edit the package.json 'scripts' section
-sed '/"scripts": {/,/  },/c\
-  "scripts": {\
-    "test": "echo \"Error: no test specified\" && exit 1",\
-    "dev": "webpack --mode development --watch",'  django_react_starter/frontend/package.json
+#sed -i -e '/"scripts": {/,/  },/c\
+#  "scripts": {\
+#    "build": "webpack --mode production",\
+#    "dev": "webpack --mode development --watch",\
+#},'  package.json
 
 # To test, run 'npm run dev' in the frontend directory.
 # Then, go to django_react_starter directory,
