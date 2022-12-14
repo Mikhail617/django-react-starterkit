@@ -45,7 +45,8 @@ yarn install
 
 # ⌨ NPM Setup Commands ⌨
 npm init -y
-npm install @babel/core @babel/preset-env @babel/preset-react babel-loader react react-dom react-router-dom webpack webpack-cli
+npm install --save-dev @babel/core @babel/preset-env @babel/preset-react babel-loader react react-dom react-router-dom webpack webpack-cli
+#npm install babel-preset-es2015 #https://stackoverflow.com/questions/33469929/you-may-need-an-appropriate-loader-to-handle-this-file-type-with-webpack-and-b
 
 mkdir templates
 cd templates
@@ -84,8 +85,16 @@ cp babel.config.js django_react_starter/frontend/templates/frontend/babel.config
 cp webpack.config.js django_react_starter/frontend/templates/frontend/webpack.config.js
 cp frontend_urls.py django_react_starter/frontend/urls.py
 cp frontend_views.py django_react_starter/frontend/views.py
+cp .babelrc django_react_starter/frontend/templates/frontend/.babelrc
 
-cd django_react_starter
+cd django_react_starter/frontend
+ls # debug
+
+# Edit the package.json 'scripts' section
+sed '/"scripts": {/,/  },/c\
+  "scripts": {\
+    "test": "echo \"Error: no test specified\" && exit 1",\
+    "dev": "webpack --mode development --watch",'  django_react_starter/frontend/package.json
 
 # To test, run 'npm run dev' in the frontend directory.
 # Then, go to django_react_starter directory,
