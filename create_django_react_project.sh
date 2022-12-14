@@ -64,7 +64,7 @@ touch index.js
 cd components
 touch HomePage.js
 touch App.js
-cd ../../../
+cd ../../../../
 ls # debug
 
 # Default frontend files
@@ -74,6 +74,8 @@ mv App.js django_react_starter/frontend/src/components/App.js
 mv HomePage.js django_react_starter/frontend/src/components/HomePage.js
 mv babel.config.js django_react_starter/frontend/templates/frontend/babel.config.js
 mv webpack.config.js django_react_starter/frontend/templates/frontend/webpack.config.js
+
+cd django_react_starter
 
 # Run migrations and start server
 python manage.py makemigrations
