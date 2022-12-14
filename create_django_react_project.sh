@@ -45,7 +45,7 @@ yarn install
 
 # ⌨ NPM Setup Commands ⌨
 npm init -y
-npm install --save-dev @babel/core @babel/preset-env @babel/preset-react babel-loader react react-dom react-router-dom webpack webpack-cli
+npm install --save-dev @babel/core @babel/preset-env @babel/preset-react @babel/plugin-proposal-class-properties babel-loader react react-dom react-router-dom webpack webpack-cli
 #npm install babel-preset-es2015 #https://stackoverflow.com/questions/33469929/you-may-need-an-appropriate-loader-to-handle-this-file-type-with-webpack-and-b
 
 mkdir templates
