@@ -11,7 +11,7 @@ django-admin startproject django_react_starter
 cd django_react_starter
 django-admin startapp api
 django-admin startapp frontend
-cd ..
+cd ../
 
 # Create backup folder for default files
 mkdir backup
