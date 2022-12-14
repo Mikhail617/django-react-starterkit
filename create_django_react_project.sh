@@ -81,11 +81,12 @@ cp index.html django_react_starter/frontend/templates/frontend/index.html
 cp index.js django_react_starter/frontend/src/index.js
 cp App.js django_react_starter/frontend/src/components/App.js
 cp HomePage.js django_react_starter/frontend/src/components/HomePage.js
-cp babel.config.js django_react_starter/frontend/templates/frontend/babel.config.js
-cp webpack.config.js django_react_starter/frontend/templates/frontend/webpack.config.js
+cp babel.config.js django_react_starter/frontend/babel.config.js
+cp webpack.config.js django_react_starter/frontend/webpack.config.js
 cp frontend_urls.py django_react_starter/frontend/urls.py
 cp frontend_views.py django_react_starter/frontend/views.py
-cp .babelrc django_react_starter/frontend/templates/frontend/.babelrc
+cp .babelrc django_react_starter/frontend/.babelrc
+#cp settings.py django_react_starter/settings.py
 
 cd django_react_starter/frontend
 ls # debug
