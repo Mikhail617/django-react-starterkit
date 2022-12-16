@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
+import HomePage from "./HomePage";
+
+import ContactForm from '../components/ContactForm';
 
 export default class App extends Component {
   constructor(props) {
@@ -9,7 +12,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <p>Django-React Starter Kit Test!</p>
+        <ContactForm />
       </div>
     );
   }
